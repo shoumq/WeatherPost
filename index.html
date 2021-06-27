@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherChaPort</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <link rel="stylesheet" href="/css/notebook.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Weather<b>ChaPort</b></h1>
+            <input type="text" name="searchcity" placeholder="Найти город.." id="searchcity">
+            <button class="ui button searchb" onclick="getAPIB()"> Поиск</button>
+            <a href="/index.html" class="link">Today</a>
+            <a href="/week.html" class="link k">Week</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p class="name cityname" id="cityname">Москва</p>
+            <p class="name">,</p>
+            <p class="degreemain name" style="padding-left: 20px;"></p>
+            <div class="days">
+                <!-- 1 -->
+                <div class="first c">
+                    <p class="date m0"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt0"></p>
+                    <p class="weathermain mw0"></p>
+                    <div class="feat0 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md0"></p>
+                        <p class="wind mi0"></p>
+                        <p class="humidity mh0"></p>
+                        <p class="gust mg0"></p>
+                        <p class="duration md0"></p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="first c">
+                    <p class="date m1"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt1"></p>
+                    <p class="weathermain mw1"></p>
+                    <div class="feat1 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md1"></p>
+                        <p class="wind mi1"></p>
+                        <p class="humidity mh1"></p>
+                        <p class="gust mg1"></p>
+                        <p class="duration md1"></p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="first c">
+                    <p class="date m2"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt2"></p>
+                    <p class="weathermain mw2"></p>
+                    <div class="feat2 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md2"></p>
+                        <p class="wind mi2"></p>
+                        <p class="humidity mh2"></p>
+                        <p class="gust mg2"></p>
+                        <p class="duration md2"></p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="first c">
+                    <p class="date m3"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt3"></p>
+                    <p class="weathermain mw3"></p>
+                    <div class="feat3 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md3"></p>
+                        <p class="wind mi3"></p>
+                        <p class="humidity mh3"></p>
+                        <p class="gust mg3"></p>
+                        <p class="duration md3"></p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="first c">
+                    <p class="date m4"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt4"></p>
+                    <p class="weathermain mw4"></p>
+                    <div class="feat4 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md4"></p>
+                        <p class="wind mi4"></p>
+                        <p class="humidity mh4"></p>
+                        <p class="gust mg4"></p>
+                        <p class="duration md4"></p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="first c">
+                    <p class="date m5"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt5"></p>
+                    <p class="weathermain mw5"></p>
+                    <div class="feat5 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md5"></p>
+                        <p class="wind mi5"></p>
+                        <p class="humidity mh5"></p>
+                        <p class="gust mg5"></p>
+                        <p class="duration md5"></p>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="first c">
+                    <p class="date m6"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt6"></p>
+                    <p class="weathermain mw6"></p>
+                    <div class="feat6 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md6"></p>
+                        <p class="wind mi6"></p>
+                        <p class="humidity mh6"></p>
+                        <p class="gust mg6"></p>
+                        <p class="duration md6"></p>
+                    </div>
+                </div>
+                <div class="first c">
+                    <p class="date m7"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt7"></p>
+                    <p class="weathermain mw7"></p>
+                    <div class="feat7 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md7"></p>
+                        <p class="wind mi7"></p>
+                        <p class="humidity mh7"></p>
+                        <p class="gust mg7"></p>
+                        <p class="duration md7"></p>
+                    </div>
+                </div>
+                <div class="first c">
+                    <p class="date m8"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt8"></p>
+                    <p class="weathermain mw8"></p>
+                    <div class="feat8 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md8"></p>
+                        <p class="wind mi8"></p>
+                        <p class="humidity mh8"></p>
+                        <p class="gust mg8"></p>
+                        <p class="duration md8"></p>
+                    </div>
+                </div>
+                <div class="first c">
+                    <p class="date m9"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt9"></p>
+                    <p class="weathermain mw9"></p>
+                    <div class="feat9 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md9"></p>
+                        <p class="wind mi9"></p>
+                        <p class="humidity mh9"></p>
+                        <p class="gust mg9"></p>
+                        <p class="duration md9"></p>
+                    </div>
+                </div>
+                <div class="first c">
+                    <p class="date m10"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt10"></p>
+                    <p class="weathermain mw10"></p>
+                    <div class="feat10 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md10"></p>
+                        <p class="wind mi10"></p>
+                        <p class="humidity mh10"></p>
+                        <p class="gust mg10"></p>
+                        <p class="duration md10"></p>
+                    </div>
+                </div>
+                <div class="first c">
+                    <p class="date m11"></p>
+                    <hr class="hrdays">
+                    <p class="deagree mt11"></p>
+                    <p class="weathermain mw11"></p>
+                    <div class="feat11 feat"></div>
+                    <hr class="hrdays hr1">
+                    <div class="min110px">
+                        <p class="description md11"></p>
+                        <p class="wind mi11"></p>
+                        <p class="humidity mh11"></p>
+                        <p class="gust mg11"></p>
+                        <p class="duration md11"></p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="centerdiv">
+                    <div class="first center c">
+                        <p class="date m12"></p>
+                        <hr class="hrdays">
+                        <p class="deagree mt12"></p>
+                        <p class="weathermain mw12"></p>
+                        <div class="feat12 feat"></div>
+                        <hr class="hrdays hr1">
+                        <div class="min110px">
+                            <p class="description md12"></p>
+                            <p class="wind mi12"></p>
+                            <p class="humidity mh12"></p>
+                            <p class="gust mg12"></p>
+                            <p class="duration md12"></p>
+                        </div>
+                    </div>
+                    <div class="first center c">
+                        <p class="date m13"></p>
+                        <hr class="hrdays">
+                        <p class="deagree mt13"></p>
+                        <p class="weathermain mw13"></p>
+                        <div class="feat13 feat"></div>
+                        <hr class="hrdays hr1">
+                        <div class="min110px">
+                            <p class="description md13"></p>
+                            <p class="wind mi13"></p>
+                            <p class="humidity mh13"></p>
+                            <p class="gust mg13"></p>
+                            <p class="duration md13"></p>
+                        </div>
+                    </div>
+                    <div class="first center c">
+                        <p class="date m14"></p>
+                        <hr class="hrdays">
+                        <p class="deagree mt14"></p>
+                        <p class="weathermain mw14"></p>
+                        <div class="feat14 feat"></div>
+                        <hr class="hrdays hr1">
+                        <div class="min110px">
+                            <p class="description md14"></p>
+                            <p class="wind mi14"></p>
+                            <p class="humidity mh14"></p>
+                            <p class="gust mg14"></p>
+                            <p class="duration md14"></p>
+                        </div>
+                    </div>
+                    <div class="first center b c">
+                        <p class="date m15"></p>
+                        <hr class="hrdays">
+                        <p class="deagree mt15"></p>
+                        <p class="weathermain mw15"></p>
+                        <div class="feat15 feat"></div>
+                        <hr class="hrdays hr1">
+                        <div class="min110px">
+                            <p class="description md15"></p>
+                            <p class="wind mi15">Скорость ветра: 3м/с</p>
+                            <p class="humidity mh15"></p>
+                            <p class="gust mg15"></p>
+                            <p class="duration md15"></p>
+                        </div>
+                    </div>
+                    <div class="first center b c">
+                        <p class="date m16"></p>
+                        <hr class="hrdays">
+                        <p class="deagree mt16"></p>
+                        <p class="weathermain mw16"></p>
+                        <div class="feat16 feat"></div>
+                        <hr class="hrdays hr1">
+                        <div class="min110px">
+                            <p class="description md16"></p>
+                            <p class="wind mi16"></p>
+                            <p class="humidity mh16"></p>
+                            <p class="gust mg16"></p>
+                            <p class="duration md16"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

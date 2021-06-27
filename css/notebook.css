@@ -1,0 +1,41 @@
+@media (min-width: 1025px) and (max-width: 1366px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(236, 236, 236);
+        height: 1400px;
+    }
+    .days {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: auto;
+    }
+    .center {
+        display: none;
+    }
+    .first {
+        margin: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+    .link {
+        position: relative;
+        left: 00px;
+        top: 35px;
+    }
+    .searchb {
+        position: relative;
+        left: 680px;
+    }
+    #searchcity {
+        position: relative;
+        left: 650px;
+    }
+}

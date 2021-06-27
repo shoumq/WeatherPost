@@ -1,0 +1,180 @@
+@media (min-width: 400px) and (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(236, 236, 236);
+        height: 1400px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .c {
+        position: relative;
+        top: 0px;
+        left: 16.7%;
+    }
+    .days {
+        width: 600px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: auto;
+    }
+    .center {
+        display: none;
+    }
+    .first {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 25px;
+        position: relative;
+        top: 10px;
+    }
+    .link {
+        position: relative;
+        left: 00px;
+        top: 15px;
+    }
+    .searchb {
+        position: relative;
+        left: 150px;
+        top: 50px;
+    }
+    #searchcity {
+        position: relative;
+        left: 0px;
+        top: 50px;
+    }
+    .name {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(236, 236, 236);
+        height: 1400px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .days {
+        width: 600px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin: auto;
+    }
+    .center {
+        display: none;
+    }
+    .first {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 25px;
+        position: relative;
+        top: 10px;
+    }
+    .link {
+        position: static;
+        left: 80px;
+        top: 15px;
+    }
+    .searchb {
+        position: relative;
+        left: 150px;
+        top: 50px;
+    }
+    #searchcity {
+        position: relative;
+        left: 0px;
+        top: 50px;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .c {
+        position: relative;
+        top: 0px;
+        left: 16.7%;
+    }
+}
+
+@media (max-width: 399px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(236, 236, 236);
+        height: 1400px;
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .logo {
+        font-size: 17px;
+    }
+    .days {
+        position: relative;
+        left: -8px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+    }
+    .center {
+        display: none;
+    }
+    .first {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 25px;
+        position: relative;
+        top: 10px;
+    }
+    .link {
+        position: relative;
+        left: 160px;
+        top: -19px;
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .searchb {
+        position: relative;
+        left: 270px;
+        top: 19px;
+    }
+    #searchcity {
+        display: block;
+        position: relative;
+        left: 0px;
+        top: 50px;
+        width: 160px;
+    }
+    .name {
+        font-size: 18px;
+    }
+    .c {
+        position: relative;
+        top: 0px;
+        left: 16.7%;
+    }
+}
